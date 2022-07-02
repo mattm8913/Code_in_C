@@ -1,0 +1,92 @@
+void main(void)
+{
+	int i;
+	
+	for(i=1; i<=30; i=i+1)
+	{
+	if(i==1||(i==8)||(i==15)||(i==22)||(i==29))
+	{
+	printf("Monday, November %d\n", i);
+	}
+	if((i==2)||(i==9)||(i==16)||(i==23)||(i==30))
+	{
+	printf("Tuesday, November %d\n", i);
+	}
+	if((i==3)||(i==10)||(i==17)||(i==24))
+	{
+	printf("Wednesday, November %d\n", i);
+	}
+	if((i==4)||(i==11)||(i==18)||(i==25))
+	{
+	printf("Thursday, November %d\n", i);
+	}
+	if((i==5)||(i==12)||(i==19)||(i==26))
+	{
+	printf("Friday, November %d\n", i);
+	}
+	if((i==6)||(i==13)||(i==20)||(i==27))
+	{
+	printf("Saturday, November %d\n", i);
+	}
+	if((i==7)||(i==14)||(i==21)||(i==28))
+	{
+	printf("Sunday, November %d\n", i);
+	}
+	}
+}
+
+void main(void)
+{
+	int a[1000], i, j, k, l;
+
+	j=1;
+	k=1;
+	a[0]=0;
+	for(i=2; i<=1000; i=i*j)
+	{
+	a[i]=0;
+	j++;
+	}
+	for(i=3; i<=1000; i=i*k)
+	{
+	a[i]=0;
+	j++;
+	}
+	for(l=0; l<=1000; l=l+1)
+	{
+	if(a[l]!=0)
+		{
+		a[l]=1;
+		}
+	}
+}
+
+void main(void)
+{
+	float n, j,q,w,i;
+	int m, b;
+	
+	n=rand();
+	j=n*100.0;
+	m=n;
+	i=1;
+
+	while((i<=100)&&(b!=m))
+	{
+	q=rand();
+	w=q*100.0;
+	b=w;
+	printf("My Guess = %d\n", b);
+	printf("Actual Number = %d\n", m);
+	printf("Number of tries so far = %d\n", i);
+	i++;
+	}
+	if(b=m)
+	{
+	printf("Success\n");
+	}
+	else
+	{
+	printf("Failure\n");
+	}
+}
